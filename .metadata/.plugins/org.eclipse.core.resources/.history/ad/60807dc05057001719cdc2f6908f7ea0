@@ -1,0 +1,28 @@
+package com.cocha.test;
+
+import java.sql.Connection;
+
+import com.cocha.business.ConsultaLineaCredito;
+import com.cocha.dto.DatosSalidaTO;
+import com.cocha.utiles.imprimeSalida;
+
+public class DoTest {
+	public static void main(String[] args) {
+		String nemote = "COPEC";
+		Connection conJdbc = null;
+		ConsultaLineaCredito consultaLineaCredito = new ConsultaLineaCredito();		
+		DatosSalidaTO salida;
+		try {
+			//CONSULTA LINEA DE CREDITO
+			salida = consultaLineaCredito.ejecucion(nemote, conJdbc);
+			String titulo = imprimeSalida.titulos().toString();
+			System.out.println(titulo);
+			String texto = imprimeSalida.datos(salida).toString();
+			System.out.println(texto);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

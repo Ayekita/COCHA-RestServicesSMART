@@ -1,0 +1,77 @@
+package com.cocha.business;
+
+import java.sql.Connection;
+
+import com.cocha.business.setSobregiro;
+import com.cocha.dao.SqlSmartDao;
+import com.cocha.dto.datosSalidaDTO;
+import com.cocha.utiles.FechasUtil;
+
+public class IngresoLineaCredito {
+
+	public static void main(String[] args) throws Exception {				
+		//String urlSmart = "jdbc:unisys:dmsql:Unisys.DMSII:resource=SMARTDB;host=libra4090;port=1897;user=cocha2;password=iquique3250"; 
+		String urlSmart = "jdbc:unisys:dmsql:Unisys.DMSII:resource=SMARTQADB;host=libra460;port=1897;user=cochaqa;password=qa"; 
+		String driverSmart = "com.unisys.jdbc.dmsql.Driver";
+
+		String nemo = "DAVEY";
+		String moneda = "CLP";
+		String negocio = "7-I92-545";
+		double valorServicio = 2000;
+		Connection con = null;
+		System.out.println(ingresoLC(driverSmart, urlSmart, moneda, nemo, negocio, valorServicio, con));
+
+	}
+
+	public static String ingresoLC(String driverSmart, String urlSmart, String moneda, String nemo, String negocio, double valorServicio, Connection con) throws Exception{
+		String status = "ERROR ingreso pago con Linea de Credito";
+
+		long fechaActual = FechasUtil.getFechaAtual();
+		long horaActual = FechasUtil.getHoraAtual();
+		SqlSmartDao smartDao = new SqlSmartDao();
+		
+		System.out.println("INICIO ingresoLC");
+		datosSalidaDTO salida = smartDao.obtieneLineaCredito(nemo, con);
+		long valorUtilizadoAntes = 0;
+		long valorUtilizadoDespues = 0;
+		double valorDisponible = 0;
+		double valorUtilizadoAntesUSD = 0;
+		double valorUtilizadoDespuesUSD = 0;
+		int rutCli = salida.getRut();
+		String usuario = "ONLINE";
+		if(moneda.equals("CLP")){
+			valorUtilizadoAntes = salida.getLineaEquivalenteUtilizada();
+			valorDisponible = salida.getLineaEquivalenteDisponible();
+		}
+		else if (moneda.equals("USD")){
+			valorUtilizadoAntesUSD = salida.getLineaEquivalenteUtilizadaUSD();
+			valorDisponible = salida.getLineaEquivalenteDisponibleUSD();
+		}
+
+		if(smartDao.ingresoLineaCredito(rutCli, moneda, valorServicio, fechaActual, horaActual, con)){
+			status = "OK pago con Linea de Credito";
+
+			System.out.println("linea utilizada CLP antes:" + valorUtilizadoAntes);
+			valorUtilizadoDespues = valorUtilizadoAntes +  Math.round(valorServicio);
+			System.out.println("linea utilizada CLP despues:" + valorUtilizadoDespues);
+			System.out.println("linea utilizada USD antes:" + valorUtilizadoAntesUSD);
+			valorUtilizadoDespuesUSD = valorUtilizadoAntesUSD + valorServicio;
+			System.out.println("linea utilizada USD despues:" + valorUtilizadoDespuesUSD);
+			if(valorDisponible <= 0 ){
+				setSobregiro sobregiro = new setSobregiro();
+				if(sobregiro.sobregiroLineaCredito(moneda, nemo, rutCli, negocio, valorUtilizadoAntes, valorUtilizadoDespues, valorUtilizadoAntesUSD, 
+						valorUtilizadoDespuesUSD, valorServicio, usuario,fechaActual, horaActual ,con)){
+					status += "\nOK registro en SMART Sobregiro";
+				}
+				else{
+					status += "\nERROR registro en SMART Sobregiro";
+				}
+			}	
+
+		}
+		System.out.println("FIN ingresoLC "+status);
+		return status;
+	}
+
+	
+}

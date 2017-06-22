@@ -1,0 +1,42 @@
+package com.cocha.business;
+
+import java.sql.Connection;
+
+import com.cocha.business.consulta.GetLineaCredito;
+import com.cocha.dao.SmartDao;
+import com.cocha.dto.datosSalidaTO;
+import com.cocha.utiles.FechasUtil;
+
+public class ControlFacturacionFinanzas {
+	public static long fechaActual = FechasUtil.getFechaAtual();
+	public static long horaActual = FechasUtil.getHoraAtual();
+
+	public static void main(String[] args) throws Exception {	
+		String nemo = "DAVEY";
+		String negocio = "7-I92-500";
+		int pedido = 395914;
+
+		Connection conJdbc = null;
+		System.out.println(controlFacturacion( negocio, pedido, nemo, conJdbc));
+	}
+
+	public static String controlFacturacion(String negocio, int pedido, String nemo, Connection conJdbc) throws Exception{
+		String status = "ERROR al actualizar el pedido";
+		
+		SmartDao dao = new SmartDao();	
+		long rutCli = dao.getRutCliente(nemo, conJdbc);
+		
+		String usuario = "ONLINE";
+		String existe = lineaCredito.existeNegPed(negocio, pedido, conJdbc);
+
+		if(existe.equals("Existe")){
+			if(lineaCredito.controlFinanzasPedido(negocio, pedido, fechaActual, horaActual, usuario, rutCli, conJdbc)){
+				status = "OK pedido actualizado";		
+			}
+		}
+		else {
+			status = existe;
+		}
+		return status;
+	}
+}

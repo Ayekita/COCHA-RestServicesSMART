@@ -1,0 +1,34 @@
+package com.cocha.servicefasttwo.srv;
+
+import java.sql.Connection;
+
+import com.cocha.servicefasttwo.dao.SmartDao;
+import com.cocha.servicefasttwo.util.FechasUtil;
+
+public class ServiceFast2 {	
+	public String procesoPrincipal(String negocio, String moneda, double valor, String spnr, Connection conJdbc) throws Exception  {
+		FechasUtil funciones = new FechasUtil();
+		System.out.println("## Inicio FEE FASTII " + funciones.getFechaHora() + " ##");
+		String respuesta = "{\nresponse=";
+		try {
+			int numped = 0;
+			SmartDao smartDao = new SmartDao();
+			String idpedido = smartDao.obtenerIdPedido(negocio, spnr, conJdbc);
+			if(idpedido != null && idpedido.length() > 0){
+				numped = smartDao.pedidoWss04(idpedido, negocio, conJdbc);
+			}
+			if(!smartDao.existeFee(negocio, spnr, moneda, numped, conJdbc)) {
+				if(smartDao.insertarFee(negocio, numped, moneda, valor, spnr, conJdbc)) {
+					respuesta += "FEE OK!}";
+				}
+			} else {
+				respuesta += "FEE YA EXISTE!\n}";
+			}
+		} 
+		catch (Exception e) {
+			respuesta = e.toString();
+		}
+		System.out.println("## Fin FEE FASTII " + funciones.getFechaHora() + " ##");
+		return respuesta;
+	}
+}

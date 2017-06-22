@@ -1,0 +1,16 @@
+package com.cocha.business;
+
+import java.sql.Connection;
+
+import com.cocha.dao.SqlSmartDao;
+import com.cocha.dto.datosSalidaDTO;
+
+public class ConsultaLineaCredito {
+
+	public datosSalidaDTO ejecucion (String nemote, Connection con) throws Exception {
+		SqlSmartDao sqlSmartDao = new SqlSmartDao();
+		datosSalidaDTO salida = sqlSmartDao.obtieneLineaCredito(nemote, con);
+		return salida;
+	}
+
+}

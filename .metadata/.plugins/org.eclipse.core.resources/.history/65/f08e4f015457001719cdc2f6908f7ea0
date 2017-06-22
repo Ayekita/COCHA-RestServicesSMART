@@ -1,0 +1,32 @@
+package com.cocha.business;
+
+import java.sql.Connection;
+
+import com.cocha.business.calculos.ControlFinanzas;
+import com.cocha.business.calculos.ExisteNegPed;
+public class ControlFacturacionFinanzas {
+
+	public static void main(String[] args) throws Exception {	
+		String nemo = "DAVEY";
+		String negocio = "7-I92-500";
+		int pedido = 395914;
+		Connection conJdbc = null;
+		System.out.println(controlFacturacion(negocio, pedido, nemo, conJdbc));
+	}
+
+	public static String controlFacturacion(String numNegocio, int numPedido, String nemo, Connection conJdbc) throws Exception{
+		ExisteNegPed isExiste = new ExisteNegPed();
+		ControlFinanzas ctrlFinanza = new ControlFinanzas();	
+		String status = "ERROR al actualizar el pedido";
+
+		status = isExiste.existeNegPed(numNegocio, numPedido, conJdbc);
+
+		if(status.equals("Existe")){
+			if(ctrlFinanza.insertControFinanzas(numNegocio, numPedido, conJdbc)){
+				status = "OK pedido actualizado";		
+			}
+		}
+
+		return status;
+	}
+}

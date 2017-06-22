@@ -1,0 +1,72 @@
+package com.cocha.business.consulta;
+
+import java.sql.Connection;
+
+import com.cocha.dao.SqlSmartDao;
+import com.cocha.dto.bmcliTO;
+import com.cocha.dto.datosSalidaDTO;
+import com.cocha.utiles.FechasUtil;
+
+public class GetLineaCredito {
+	public datosSalidaDTO obtieneLineaCredito(String nemote, Connection conJdbc) throws Exception {		
+		long lineaEquivalenteAutorizada = 0;
+		long lineaEquivalenteUtilizada = 0;
+		long lineaEquivalenteDisponible = 0;
+
+		bmcliTO cliente = new bmcliTO();
+		SqlSmartDao sqlSmartDao = new SqlSmartDao();
+
+		cliente = sqlSmartDao.getCliente(nemote, conJdbc);
+
+		int tasaCambio = sqlSmartDao.getTasaCambio(FechasUtil.getFechaAtual(), conJdbc);
+		long lineaUtilizadaCLP= sqlSmartDao.getLineaUtilizadaCLP(cliente.getRut(), conJdbc);
+		Double lineaUtilizadaUSD= sqlSmartDao.getLineaUtilizadaUSD(cliente.getRut(), conJdbc);
+		long lineaDisponibleCLP = cliente.getLineaCLP() - lineaUtilizadaCLP;
+		double lineaDisponibleUSD = cliente.getLineaUSD() - lineaUtilizadaUSD;
+
+		lineaUtilizadaUSD = FechasUtil.round(lineaUtilizadaUSD, 2);
+		lineaDisponibleUSD = FechasUtil.round(lineaDisponibleUSD, 2);
+
+		datosSalidaDTO salida = new datosSalidaDTO();
+		salida.setRut(cliente.getRut());
+		salida.setDv(cliente.getDv());
+		salida.setNemote(cliente.getNemote());
+		salida.setNemogr(cliente.getNemogr());
+		salida.setRazonSocial(cliente.getRazonSocial());		
+		salida.setTasaCambio(tasaCambio);		
+		salida.setLineaAutorizadaCLP(cliente.getLineaCLP());
+		salida.setLineaAutorizadaUSD(cliente.getLineaUSD());		
+		salida.setLineaUtilizadaCLP(lineaUtilizadaCLP);
+		salida.setLineaUtilizadaUSD(lineaUtilizadaUSD);	
+		salida.setLineaDisponibleCLP(lineaDisponibleCLP);
+		salida.setLineaDisponibleUSD(lineaDisponibleUSD);
+		salida.setLineaEquivalenteAutorizada(lineaEquivalenteAutorizada);
+
+		if(cliente.getLineaCLP() > 0) 	{
+			lineaEquivalenteAutorizada += cliente.getLineaCLP();
+		}
+		if(cliente.getLineaUSD() > 0) {
+			cliente.setLineaUSD(cliente.getLineaUSD() * tasaCambio);
+			lineaEquivalenteAutorizada += cliente.getLineaUSD();
+		}
+
+		if(lineaUtilizadaCLP > 0) {
+			lineaEquivalenteUtilizada += lineaUtilizadaCLP;
+		}
+		if(lineaUtilizadaUSD > 0) {
+			lineaUtilizadaUSD = lineaUtilizadaUSD * tasaCambio;
+			lineaEquivalenteUtilizada += lineaUtilizadaUSD;
+		}
+
+		salida.setLineaEquivalenteUtilizada(lineaEquivalenteUtilizada);
+		salida.setLineaEquivalenteUtilizadaUSD(FechasUtil.round((lineaEquivalenteUtilizada/tasaCambio),2));
+		lineaEquivalenteDisponible = lineaEquivalenteAutorizada - lineaEquivalenteUtilizada;
+		salida.setLineaEquivalenteDisponible(lineaEquivalenteDisponible);
+		salida.setLineaEquivalenteDisponibleUSD(FechasUtil.round((lineaEquivalenteDisponible/tasaCambio),2));
+		salida.setTipo(cliente.getTipo());
+		salida.setFrecuencia(cliente.getFrecuencia());
+		salida.setReqOC(cliente.getReqOC());
+
+		return salida;
+	}
+}

@@ -1,0 +1,16 @@
+package com.cocha.business;
+
+import java.sql.Connection;
+
+import com.cocha.business.consulta.GetLineaCredito;
+import com.cocha.dto.datosSalidaDTO;
+
+public class ConsultaLineaCredito {
+
+	public datosSalidaDTO ejecucion (String nemote, Connection con) throws Exception {
+		GetLineaCredito getLineaCredito = new GetLineaCredito();
+		datosSalidaDTO salida = getLineaCredito.obtieneLineaCredito(nemote, con);
+		return salida;
+	}
+
+}
