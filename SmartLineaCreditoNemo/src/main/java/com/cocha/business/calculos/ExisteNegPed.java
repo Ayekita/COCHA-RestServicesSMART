@@ -2,7 +2,7 @@ package com.cocha.business.calculos;
 
 import java.sql.Connection;
 
-import com.cocha.dao.SmartDao;
+import com.cocha.persistance.SmartDao;
 
 public class ExisteNegPed {
 	public String existeNegPed(String numneg, int numped, Connection con){

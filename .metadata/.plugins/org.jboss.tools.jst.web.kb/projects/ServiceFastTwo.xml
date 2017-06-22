@@ -11,7 +11,7 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-shiro-all-1.2.4.jar/meta-inf/shiro.tld" project="SmartLineaCreditoNemo"/>
+      path="FileSystems/lib-shiro-all-1.2.4.jar/meta-inf/shiro.tld" project="ServiceFastTwo"/>
     </library>
    </libraries>
   </path>
@@ -82,6 +82,14 @@
   <path value="C:/Users/avaldivia/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.1.2.Final-wildfly-1/arquillian-container-test-impl-base-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar"/>
+  <path value="/ServiceFastTwo/src/main/webapp/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="ServiceFastTwo"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.1.2/shrinkwrap-api-1.1.2.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
@@ -119,11 +127,11 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-spring-webmvc-4.0.5.RELEASE.jar/meta-inf/spring-form.tld" project="SmartLineaCreditoNemo"/>
+      path="FileSystems/lib-spring-webmvc-4.0.5.RELEASE.jar/meta-inf/spring-form.tld" project="ServiceFastTwo"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-spring-webmvc-4.0.5.RELEASE.jar/meta-inf/spring.tld" project="SmartLineaCreditoNemo"/>
+      path="FileSystems/lib-spring-webmvc-4.0.5.RELEASE.jar/meta-inf/spring.tld" project="ServiceFastTwo"/>
     </library>
    </libraries>
   </path>
@@ -136,7 +144,72 @@
   <path value="C:/Users/avaldivia/.m2/repository/org/springframework/spring-expression/4.0.5.RELEASE/spring-expression-4.0.5.RELEASE.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/aspectj/aspectjweaver/1.8.1/aspectjweaver-1.8.1.jar"/>
  </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="62" name="%0" offset="10392" path="%1"/>
+   <linked-el length="58" name="%0" offset="9079" path="%1"/>
+   <linked-el length="57" name="%0" offset="9335" path="%1"/>
+   <linked-el length="61" name="%0" offset="8300" path="%1"/>
+   <linked-el length="59" name="%0" offset="8561" path="%1"/>
+   <linked-el length="60" name="%0" offset="7759" path="%1"/>
+   <linked-el length="57" name="%0" offset="9590" path="%1"/>
+   <linked-el length="59" name="%0" offset="10134" path="%1"/>
+   <linked-el length="73" name="%0" offset="9861" path="%1"/>
+   <linked-el length="60" name="%0" offset="8020" path="%1"/>
+   <linked-el length="59" name="%0" offset="8820" path="%1"/>
+   <linked-el length="20" name="%2" offset="2314" path="%1"/>
+   <linked-el length="20" name="%2" offset="2623" path="%1"/>
+   <linked-el length="62" name="%3" offset="10392" path="%1"/>
+   <linked-el length="58" name="%3" offset="9079" path="%1"/>
+   <linked-el length="57" name="%3" offset="9335" path="%1"/>
+   <linked-el length="21" name="%3" offset="10695" path="%1"/>
+   <linked-el length="61" name="%3" offset="8300" path="%1"/>
+   <linked-el length="59" name="%3" offset="8561" path="%1"/>
+   <linked-el length="60" name="%3" offset="7759" path="%1"/>
+   <linked-el length="57" name="%3" offset="9590" path="%1"/>
+   <linked-el length="59" name="%3" offset="10134" path="%1"/>
+   <linked-el length="73" name="%3" offset="9861" path="%1"/>
+   <linked-el length="60" name="%3" offset="8020" path="%1"/>
+   <linked-el length="59" name="%3" offset="8820" path="%1"/>
+   <linked-el length="21" name="%4" offset="10695" path="%1"/>
+   <linked-el length="20" name="%5" offset="2314" path="%1"/>
+   <linked-el length="21" name="%5" offset="10855" path="%1"/>
+   <linked-el length="31" name="%5" offset="11453" path="%1"/>
+   <linked-el length="26" name="%5" offset="12546" path="%1"/>
+   <linked-el length="21" name="%5" offset="14785" path="%1"/>
+   <linked-el length="20" name="%5" offset="2623" path="%1"/>
+   <linked-el length="31" name="%6" offset="11453" path="%1"/>
+   <linked-el length="31" name="%7" offset="11453" path="%1"/>
+   <linked-el length="21" name="%8" offset="10855" path="%1"/>
+   <linked-el length="21" name="%8" offset="14785" path="%1"/>
+   <linked-el length="31" name="%9" offset="11453" path="%1"/>
+   <linked-el length="26" name="%10" offset="12546" path="%1"/>
+   <linked-el length="20" name="%11" offset="2314" path="%1"/>
+   <linked-el length="20" name="%11" offset="2623" path="%1"/>
+   <linked-el length="21" name="%12" offset="10855" path="%1"/>
+   <linked-el length="21" name="%12" offset="14785" path="%1"/>
+   <linked-el length="26" name="%13" offset="12546" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="project.basedir" value="%0"/>
+  <alias path="version.jboss.bom" value="%2"/>
+  <alias path="project" value="%3"/>
+  <alias path="project.artifactId" value="%4"/>
+  <alias path="version" value="%5"/>
+  <alias path="version.wildfly.maven.plugin" value="%6"/>
+  <alias path="version.wildfly.maven" value="%7"/>
+  <alias path="version.war" value="%8"/>
+  <alias path="version.wildfly" value="%9"/>
+  <alias path="version.surefire" value="%10"/>
+  <alias path="version.jboss" value="%11"/>
+  <alias path="version.war.plugin" value="%12"/>
+  <alias path="version.surefire.plugin" value="%13"/>
+  <alias path="/ServiceFastTwo/pom.xml" value="%1"/>
+ </aliases>
  <includes/>
- <aliases/>
  <uris/>
 </kb-project>

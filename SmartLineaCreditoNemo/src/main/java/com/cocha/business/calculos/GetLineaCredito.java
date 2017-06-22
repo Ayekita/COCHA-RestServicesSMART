@@ -2,19 +2,19 @@ package com.cocha.business.calculos;
 
 import java.sql.Connection;
 
-import com.cocha.dao.SmartDao;
-import com.cocha.dto.BmcliTO;
-import com.cocha.dto.DatosSalidaTO;
-import com.cocha.utiles.FechasUtil;
+import com.cocha.domain.Bmcli;
+import com.cocha.domain.DatosSalida;
+import com.cocha.persistance.SmartDao;
+import com.cocha.utils.FechasUtil;
 
 public class GetLineaCredito {
-	public DatosSalidaTO obtieneLineaCredito(String nemote, Connection conJdbc) throws Exception {		
+	public DatosSalida obtieneLineaCredito(String nemote, Connection conJdbc) throws Exception {		
 		long lineaEquivalenteAutorizada = 0;
 		long lineaEquivalenteUtilizada = 0;
 		long lineaEquivalenteDisponible = 0;
 
 		FechasUtil fechas = new FechasUtil();
-		BmcliTO cliente = new BmcliTO();
+		Bmcli cliente = new Bmcli();
 		SmartDao sqlSmartDao = new SmartDao();
 
 		cliente = sqlSmartDao.getCliente(nemote, conJdbc);
@@ -27,7 +27,7 @@ public class GetLineaCredito {
 		lineaUtilizadaUSD = fechas.round(lineaUtilizadaUSD, 2);
 		lineaDisponibleUSD = fechas.round(lineaDisponibleUSD, 2);
 
-		DatosSalidaTO salida = new DatosSalidaTO();
+		DatosSalida salida = new DatosSalida();
 		salida.setRut(cliente.getRut());
 		salida.setDv(cliente.getDv());
 		salida.setNemote(cliente.getNemote());

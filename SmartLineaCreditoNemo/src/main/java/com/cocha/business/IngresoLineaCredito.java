@@ -5,8 +5,8 @@ import java.sql.Connection;
 import com.cocha.business.calculos.GetLineaCredito;
 import com.cocha.business.calculos.SetLineaCredito;
 import com.cocha.business.calculos.setSobregiro;
-import com.cocha.dto.DatosSalidaTO;
-import com.cocha.utiles.FechasUtil;
+import com.cocha.domain.DatosSalida;
+import com.cocha.utils.FechasUtil;
 
 public class IngresoLineaCredito {
 
@@ -27,7 +27,7 @@ public class IngresoLineaCredito {
 		double valorUtilizadoAntesUSD = 0;
 		double valorUtilizadoDespuesUSD = 0;
 
-		DatosSalidaTO salida = getLinCre.obtieneLineaCredito(nemo, conJdbc);	
+		DatosSalida salida = getLinCre.obtieneLineaCredito(nemo, conJdbc);	
 
 		int rutCli = salida.getRut();
 		String usuario = "ONLINE";

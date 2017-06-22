@@ -1,0 +1,26 @@
+package com.cocha.ws;
+
+import java.sql.Connection;
+
+import com.cocha.business.ConsultaLineaCredito;
+import com.cocha.dto.DatosSalidaTO;
+import com.cocha.persistance.SmartConnections;
+
+public class LineaCredito {
+	public DatosSalidaTO getLineaCreditoNemo(String nemote){
+
+		DatosSalidaTO salida;
+		SmartConnections conectame;
+		try {
+			conectame = SmartConnections.getInstance();
+		
+		Connection conJdbc = conectame.getConnSmart();
+		ConsultaLineaCredito consultaLineaCredito = new ConsultaLineaCredito();	
+		salida = consultaLineaCredito.ejecucion(nemote, conJdbc);	
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return salida;
+	}
+}

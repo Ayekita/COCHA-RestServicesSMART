@@ -8656,3 +8656,230 @@ java.lang.IllegalStateException: Preference node "org.eclipse.wst.validation" ha
 2017-06-22 11:09:25,966 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-06-22 11:09:25,981 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-06-22 11:09:25,981 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:12:39,570 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:12:39,617 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:12:39,624 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:12:39,757 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:12:48,221 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:12:48,243 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:12:48,252 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:12:48,260 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:13:47,329 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:13:47,335 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:13:47,343 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:13:47,350 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:14:27,344 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:14:27,353 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:14:27,360 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:14:27,365 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:15:15,223 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:15,253 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:15:15,327 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:15,360 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:15:16,021 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:16,101 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:15:16,103 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:16,104 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:15:27,212 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:27,218 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:15:27,224 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:27,228 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:15:32,003 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:32,013 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:15:32,025 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:32,033 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:15:54,456 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:54,460 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:15:54,468 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:15:54,477 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:17:17,013 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:17:17,023 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:17:17,032 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:17:17,040 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:18:45,793 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:18:45,802 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:18:45,812 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:18:45,818 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:18:59,942 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:18:59,951 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:18:59,960 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:18:59,965 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:20:41,232 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:20:41,238 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:20:41,244 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:20:41,248 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:21:51,984 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:21:51,998 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:21:52,006 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:21:52,012 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:22:51,681 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:22:51,702 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:22:51,710 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:22:51,716 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:22:57,640 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:22:57,647 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:22:57,658 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:22:57,665 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:23:03,932 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:03,942 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:23:03,947 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:03,952 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:23:09,098 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:09,119 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:23:09,126 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:09,136 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:23:17,766 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:17,775 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:23:17,782 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:17,788 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:23:29,476 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:29,484 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:23:29,492 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:29,497 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:23:43,802 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:43,811 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:23:43,817 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:23:43,825 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:24:05,215 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:24:05,223 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:24:05,231 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:24:05,236 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:24:12,593 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:24:12,601 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:24:12,608 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:24:12,613 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:24:57,148 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:24:57,155 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:24:57,161 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:24:57,166 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:25:23,695 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:25:23,708 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:25:23,742 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:25:23,753 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:29:50,378 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:29:50,382 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:29:50,388 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:29:50,394 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:29:59,617 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1342421ms
+2017-06-22 11:29:59,863 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-06-22 11:29:59,936 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@72d3ecb1{/help,null,AVAILABLE}
+2017-06-22 11:29:59,968 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2aba6598{HTTP/1.1,[http/1.1]}{127.0.0.1:63253}
+2017-06-22 11:29:59,991 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1342794ms
+2017-06-22 11:30:16,296 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:16,299 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:30:16,301 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:16,302 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:30:48,451 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:48,458 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:30:48,465 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:48,466 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:30:52,401 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:52,404 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:30:52,405 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:52,406 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:30:58,900 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:58,921 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:30:58,927 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:30:58,928 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:31:06,436 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:31:06,455 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:31:06,458 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:31:06,478 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:31:09,870 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:31:09,998 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:31:10,006 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:31:10,035 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:31:47,073 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:31:47,076 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:31:47,077 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:31:47,077 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:35:44,397 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:35:44,400 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:35:44,437 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:35:44,438 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:35:44,899 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:35:44,902 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:35:44,914 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:35:44,915 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartCon\src\test\resources
+2017-06-22 11:35:46,873 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:35:46,875 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:35:46,885 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:35:46,886 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:39:40,915 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:39:40,918 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:39:40,944 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:39:40,944 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:41:08,744 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:41:08,749 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:41:08,753 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:41:08,753 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:41:20,411 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:41:20,420 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:41:20,442 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:41:20,443 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:41:28,538 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:41:28,541 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:41:28,543 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:41:28,543 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-22 11:44:25,875 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 11:44:31,645 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:44:31,652 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-22 11:44:31,658 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:44:31,662 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:44:31,663 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-22 11:44:31,663 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-22 11:44:31,668 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-22 11:44:31,681 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-22 11:44:31,689 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-22 11:44:31,697 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-22 11:44:31,705 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-22 11:44:31,718 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-22 11:44:31,725 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-22 11:44:31,732 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-22 11:44:31,741 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:44:34,496 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:44:34,499 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:44:34,509 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:44:34,510 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:45:05,242 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:45:05,247 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:45:05,249 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:45:05,249 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:46:03,688 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:46:03,691 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:46:03,701 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:46:03,701 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:46:09,760 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:46:09,764 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:46:09,766 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:46:09,766 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:46:18,174 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:46:18,181 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:46:18,196 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:46:18,197 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:46:45,505 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-22 11:46:46,633 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 11:46:47,594 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-22 11:46:50,479 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-22 11:46:50,486 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-22 11:46:50,493 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-22 11:46:53,015 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/main/java
+2017-06-22 11:46:53,016 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SmartLineaCreditoNemo/src/main/resources
+2017-06-22 11:46:53,023 [Worker-35] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/test/java
+2017-06-22 11:46:57,221 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-22 11:46:57,524 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SmartLineaCreditoNemo
+2017-06-22 11:46:57,560 [Worker-35] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2017-06-22 11:47:03,895 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 11:47:06,348 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:47:06,353 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:47:06,369 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:47:06,373 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:47:09,587 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:47:09,590 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:47:09,604 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:47:09,609 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-22 11:47:13,422 [Worker-38] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-22 11:47:15,395 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:47:15,402 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-22 11:47:15,418 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-22 11:47:15,418 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources

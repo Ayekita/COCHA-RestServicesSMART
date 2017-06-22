@@ -2,7 +2,7 @@ package com.cocha.servicefasttwo.test;
 
 import java.sql.Connection;
 
-import com.cocha.servicefasttwo.srv.ServiceFast2;
+import com.cocha.servicefasttwo.business.ServiceFast2;
 
 public class TestService {
 	public static void main(String[] args) {

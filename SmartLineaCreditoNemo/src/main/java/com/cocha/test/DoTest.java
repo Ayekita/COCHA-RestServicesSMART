@@ -5,7 +5,7 @@ import java.sql.Connection;
 import com.cocha.business.ConsultaLineaCredito;
 import com.cocha.business.ControlFacturacionFinanzas;
 import com.cocha.business.IngresoLineaCredito;
-import com.cocha.dto.DatosSalidaTO;
+import com.cocha.domain.DatosSalida;
 import com.cocha.persistance.SmartConnections;
 
 public class DoTest {
@@ -14,11 +14,12 @@ public class DoTest {
 			String nemote = "COPEC";
 			SmartConnections conectame = SmartConnections.getInstance();
 			Connection conJdbc = conectame.getConnSmart();
-			ConsultaLineaCredito consultaLineaCredito = new ConsultaLineaCredito();		
-			DatosSalidaTO salida;
+					
 
 			//CONSULTA LINEA DE CREDITO
-			salida = consultaLineaCredito.ejecucion(nemote, conJdbc);
+			DatosSalida salida;
+			ConsultaLineaCredito consultaLineaCredito = new ConsultaLineaCredito();	
+			salida = consultaLineaCredito.ejecucion(nemote, conJdbc);			
 			System.out.println("CONSULTA LINEA DE CREDITO: "+salida.toString());	
 
 			//CONSULTA CONTROL FACTURACION

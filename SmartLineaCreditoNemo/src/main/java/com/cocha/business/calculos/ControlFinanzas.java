@@ -2,9 +2,9 @@ package com.cocha.business.calculos;
 
 import java.sql.Connection;
 
-import com.cocha.dao.SmartDao;
-import com.cocha.dto.VmpelTo;
-import com.cocha.utiles.FechasUtil;
+import com.cocha.domain.Vmpel;
+import com.cocha.persistance.SmartDao;
+import com.cocha.utils.FechasUtil;
 
 public class ControlFinanzas {
 	public boolean insertControFinanzas(String numneg, int numPed, Connection conJdbc){
@@ -18,7 +18,7 @@ public class ControlFinanzas {
 				isUpdate = dao.updateFacPed(tipoServ, numPed, conJdbc);
 			}
 			if(isUpdate){
-				VmpelTo vmpel = new VmpelTo();
+				Vmpel vmpel = new Vmpel();
 				vmpel.setEvento("AUTORIZACION DE FACTURACION");
 				vmpel.setFectran(fec.getFechaActual());
 				vmpel.setHortran(fec.getHoraActual());

@@ -64,7 +64,7 @@
 		    <groupId>com.cocha</groupId>
 		    <artifactId>SmartCon</artifactId>
 		    <version>1.0</version>
-		 </dependency>   
+    	</dependency>   
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>

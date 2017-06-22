@@ -2,8 +2,8 @@ package com.cocha.business.calculos;
 
 import java.sql.Connection;
 
-import com.cocha.dao.SmartDao;
-import com.cocha.dto.FmsctTo;
+import com.cocha.domain.Fmsct;
+import com.cocha.persistance.SmartDao;
 
 public class SetLineaCredito {
 	public boolean ingresoLinCred(int rutCli,String moneda, Double valor, 
@@ -11,7 +11,7 @@ public class SetLineaCredito {
 		boolean isOk = false;
 		SmartDao dao = new SmartDao();
 		try {
-			FmsctTo fmsct = dao.existeFmsct(rutCli, conJdbc);
+			Fmsct fmsct = dao.existeFmsct(rutCli, conJdbc);
 			if (fmsct != null){
 				if("CLP".equalsIgnoreCase(moneda)){
 					fmsct.setTrClp(valor + fmsct.getTrClp());
@@ -20,7 +20,7 @@ public class SetLineaCredito {
 				}
 				isOk = dao.updateFmcst(fmsct, conJdbc);
 			}else{
-				fmsct = new FmsctTo();
+				fmsct = new Fmsct();
 				fmsct.setCodUsuar("ONLINE");
 				fmsct.setFecAct(fechaActual);
 				fmsct.setHrUltran(horaActual);

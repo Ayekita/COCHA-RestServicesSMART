@@ -2,8 +2,8 @@ package com.cocha.business.calculos;
 
 import java.sql.Connection;
 
-import com.cocha.dao.SmartDao;
-import com.cocha.dto.VmlcdTO;
+import com.cocha.domain.Vmlcd;
+import com.cocha.persistance.SmartDao;
 
 public class setSobregiro {
 	public boolean sobregiroLineaCredito(String moneda, String nemo, int rut, String numneg, 
@@ -11,7 +11,7 @@ public class setSobregiro {
 			long fechaActual, long horaActual, Connection con) 
 					throws ClassNotFoundException{    	    	
 		boolean status = false;
-		VmlcdTO datos = new VmlcdTO();
+		Vmlcd datos = new Vmlcd();
 		datos.setAutoriza(usuario);
 		datos.setEstado(0);
 		datos.setMonlca(moneda);
