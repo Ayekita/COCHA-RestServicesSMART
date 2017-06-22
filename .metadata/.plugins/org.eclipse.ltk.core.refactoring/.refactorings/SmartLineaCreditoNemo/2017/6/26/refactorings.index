@@ -28,3 +28,6 @@
 1498145457409	Rename type 'FmsctTo'
 1498145465148	Rename type 'VmlcdTo'
 1498145468805	Rename type 'VmpelTo'
+1498150212485	Copy source folder
+1498170369039	Copy compilation unit
+1498170474908	Rename method 'getHoraAtual'

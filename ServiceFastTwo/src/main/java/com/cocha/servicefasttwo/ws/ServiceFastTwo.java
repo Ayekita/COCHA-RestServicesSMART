@@ -6,16 +6,15 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 
-import com.cocha.persistance.SmartConnections;
 import com.cocha.servicefasttwo.business.ServiceFast2;
+import com.cocha.servicefasttwo.persistance.SmartConnections;
 import com.qq.connect.utils.json.JSONObject;
 
 @Path("/ServiceFastTwo")
 public class ServiceFastTwo {
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces({ "application/json" })
 	@Path("/doService/negocio={negocio}&moneda={moneda}&valor={valor}&spnr={spnr}")
 	public String doService(@PathParam("negocio") String negocio, @PathParam("moneda") String moneda,
 			@PathParam("valor") double valor, @PathParam("spnr") String spnr){
