@@ -20,12 +20,9 @@
 <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="com.cocha.utils.PropertiesUtil"/>
 <fullyQualifiedTypeName name="com.unisys.jdbc.dmsql.SQLException"/>
-<fullyQualifiedTypeName name="com.cocha.persistance.SmartConnections"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.xml.ws.Response"/>
@@ -37,4 +34,10 @@
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.cocha.business.consulta.GetLineaCredito"/>
 <fullyQualifiedTypeName name="com.cocha.dao.SqlSmartDao"/>
+<fullyQualifiedTypeName name="com.cocha.test.DoTest"/>
+<fullyQualifiedTypeName name="com.cocha.persistance.SmartConnections"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="com.cocha.business.ControlFacturacionFinanzas"/>
+<fullyQualifiedTypeName name="com.cocha.business.IngresoLineaCredito"/>
 </qualifiedTypeNameHistroy>

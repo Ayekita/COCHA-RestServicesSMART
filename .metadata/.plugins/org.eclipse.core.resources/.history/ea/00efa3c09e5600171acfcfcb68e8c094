@@ -1,2 +1,0 @@
-driverSmart = com.unisys.jdbc.dmsql.Driver
-urlSmart = jdbc:unisys:dmsql:Unisys.DMSII:resource=SMARTQADB;host=libra460;port=1897;user=cochaqa;password=qa

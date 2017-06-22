@@ -31,7 +31,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="SmartServices"/>
+			<item value="ServiceFastTwo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -80,6 +80,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART"/>
 			<item value="E:\Proyectos Java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -116,14 +117,12 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.cocha"/>
+			<item value="org."/>
 		</list>
 		<list key="groupId">
 			<item value="com.cocha"/>
 		</list>
 		<list key="artifactId">
-			<item value="SmartLineaCreditoNemo"/>
-			<item value="SmartCon"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -135,7 +134,6 @@
 		</list>
 		<list key="version">
 			<item value="1.0.0"/>
-			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">
