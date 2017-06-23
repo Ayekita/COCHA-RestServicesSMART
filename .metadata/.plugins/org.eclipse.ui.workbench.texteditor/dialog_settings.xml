@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="private" key="selection"/>
+		<item value="javax.validation" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="javax.validation"/>
+			<item value="nemote"/>
 			<item value="public"/>
 			<item value="&gt;maven-assembly-plugin"/>
 			<item value="ServiceFastTwo"/>
 			<item value="SmartServices"/>
 			<item value="-"/>
 			<item value="wildfly-parent"/>
-			<item value="(&quot;"/>
-			<item value=".lineacredito"/>
 		</list>
 		<list key="replacehistory">
+			<item value="nemo"/>
 			<item value="private"/>
 			<item value="SmartLineaCreditoNemo"/>
 			<item value="ServiceFastTwo"/>
@@ -25,7 +26,6 @@
 			<item value="(&quot;\n "/>
 			<item value="/WEB-INF/"/>
 			<item value="/src/main/webapp/resources"/>
-			<item value="= &quot;).append("/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

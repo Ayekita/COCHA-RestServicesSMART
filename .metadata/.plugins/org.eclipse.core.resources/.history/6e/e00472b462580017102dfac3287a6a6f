@@ -1,0 +1,21 @@
+package com.cocha.servicefasttwo.domain;
+
+
+import javax.ws.rs.Path;
+
+import org.apache.commons.lang3.SerializationUtils;
+
+@Path("respuesta")
+public class Response extends SerializationUtils{
+
+	private String status;
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status)  {
+		this.status = status;
+	}
+	
+}

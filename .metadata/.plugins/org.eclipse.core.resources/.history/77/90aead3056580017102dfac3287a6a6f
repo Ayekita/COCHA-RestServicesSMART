@@ -1,0 +1,36 @@
+package com.cocha.servicefasttwo.ws;
+
+import java.sql.Connection;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.cocha.servicefasttwo.business.ServiceFast2;
+import com.cocha.servicefasttwo.domain.Response;
+import com.cocha.servicefasttwo.persistance.SmartConnections;
+
+@Path("/ServiceFastTwo")
+public class ServiceFastTwo {
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/get/negocio={negocio}&moneda={moneda}&valor={valor}&spnr={spnr}")
+	public Response doService(@PathParam("negocio") String negocio, @PathParam("moneda") String moneda,
+			@PathParam("valor") double valor, @PathParam("spnr") String spnr){
+		Connection conSmart = null;
+		Response respuesta = null;
+		try {
+			SmartConnections conectame = SmartConnections.getInstance();
+			conSmart = conectame.getConnSmart();
+			ServiceFast2 ejecutar = new ServiceFast2();
+			respuesta = ejecutar.procesoPrincipal(negocio, moneda, valor, spnr, conSmart);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
+		return respuesta;
+	}
+
+}

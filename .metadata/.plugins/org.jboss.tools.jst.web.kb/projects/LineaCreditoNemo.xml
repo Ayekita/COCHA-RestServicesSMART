@@ -81,6 +81,7 @@
   <path value="C:/Users/avaldivia/Documents/Proyectos Java/RestServicesSmart/RestServicesSMART/LineaCreditoNemo/src/main/webapp/WEB-INF/lib/dmsql-rdc.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.1.2.Final-wildfly-1/arquillian-config-api-1.1.2.Final-wildfly-1.jar"/>
+  <path value="C:/Users/avaldivia/Documents/Proyectos Java/RestServicesSmart/RestServicesSMART/LineaCreditoNemo/src/main/webapp/WEB-INF/lib/jackson-mapper-asl-1.9.9.redhat-4.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.1.2.Final-wildfly-1/arquillian-test-spi-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/springframework/spring-messaging/4.0.7.RELEASE/spring-messaging-4.0.7.RELEASE.jar"/>

@@ -50,8 +50,8 @@
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/net/mingsoft/ms-base/1.0.0/ms-base-1.0.0.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.1.2.Final-wildfly-1/arquillian-container-test-spi-1.1.2.Final-wildfly-1.jar"/>
-  <path value="C:/Users/avaldivia/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar"/>
+  <path value="C:/Users/avaldivia/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/hibernate/hibernate-jpamodelgen/4.3.5.Final/hibernate-jpamodelgen-4.3.5.Final.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
@@ -72,6 +72,7 @@
   <path value="C:/Users/avaldivia/.m2/repository/org/apache/shiro/shiro-guice/1.2.4/shiro-guice-1.2.4.jar"/>
   <path value="C:/Users/avaldivia/Documents/Proyectos Java/RestServicesSmart/RestServicesSMART/ServiceFastTwo/src/main/webapp/WEB-INF/lib/provider.jar"/>
   <path value="C:/Users/avaldivia/Documents/Proyectos Java/RestServicesSmart/RestServicesSMART/ServiceFastTwo/src/main/webapp/WEB-INF/lib/dmsql-qdc.jar"/>
+  <path value="C:/Users/avaldivia/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.1.2.Final-wildfly-1/arquillian-config-api-1.1.2.Final-wildfly-1.jar"/>
   <path value="C:/Users/avaldivia/.m2/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar"/>
@@ -149,49 +150,49 @@
   <core validator-id="jboss.cdi.core"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="73" name="%0" offset="10458" path="%1"/>
-   <linked-el length="60" name="%0" offset="8617" path="%1"/>
-   <linked-el length="59" name="%0" offset="9417" path="%1"/>
-   <linked-el length="62" name="%0" offset="10989" path="%1"/>
-   <linked-el length="58" name="%0" offset="9676" path="%1"/>
-   <linked-el length="57" name="%0" offset="9932" path="%1"/>
-   <linked-el length="57" name="%0" offset="10187" path="%1"/>
-   <linked-el length="59" name="%0" offset="10731" path="%1"/>
-   <linked-el length="61" name="%0" offset="8897" path="%1"/>
-   <linked-el length="59" name="%0" offset="9158" path="%1"/>
-   <linked-el length="60" name="%0" offset="8356" path="%1"/>
-   <linked-el length="20" name="%2" offset="3115" path="%1"/>
-   <linked-el length="20" name="%2" offset="2806" path="%1"/>
-   <linked-el length="73" name="%3" offset="10458" path="%1"/>
-   <linked-el length="60" name="%3" offset="8617" path="%1"/>
-   <linked-el length="59" name="%3" offset="9417" path="%1"/>
-   <linked-el length="62" name="%3" offset="10989" path="%1"/>
-   <linked-el length="58" name="%3" offset="9676" path="%1"/>
-   <linked-el length="57" name="%3" offset="9932" path="%1"/>
-   <linked-el length="21" name="%3" offset="11292" path="%1"/>
-   <linked-el length="57" name="%3" offset="10187" path="%1"/>
-   <linked-el length="59" name="%3" offset="10731" path="%1"/>
-   <linked-el length="61" name="%3" offset="8897" path="%1"/>
-   <linked-el length="59" name="%3" offset="9158" path="%1"/>
-   <linked-el length="60" name="%3" offset="8356" path="%1"/>
-   <linked-el length="21" name="%4" offset="11292" path="%1"/>
-   <linked-el length="26" name="%5" offset="13143" path="%1"/>
-   <linked-el length="21" name="%5" offset="11452" path="%1"/>
-   <linked-el length="20" name="%5" offset="3115" path="%1"/>
-   <linked-el length="31" name="%5" offset="12050" path="%1"/>
-   <linked-el length="20" name="%5" offset="2806" path="%1"/>
-   <linked-el length="21" name="%5" offset="15382" path="%1"/>
-   <linked-el length="31" name="%6" offset="12050" path="%1"/>
-   <linked-el length="31" name="%7" offset="12050" path="%1"/>
-   <linked-el length="21" name="%8" offset="11452" path="%1"/>
-   <linked-el length="21" name="%8" offset="15382" path="%1"/>
-   <linked-el length="31" name="%9" offset="12050" path="%1"/>
-   <linked-el length="26" name="%10" offset="13143" path="%1"/>
-   <linked-el length="20" name="%11" offset="3115" path="%1"/>
-   <linked-el length="20" name="%11" offset="2806" path="%1"/>
-   <linked-el length="21" name="%12" offset="11452" path="%1"/>
-   <linked-el length="21" name="%12" offset="15382" path="%1"/>
-   <linked-el length="26" name="%13" offset="13143" path="%1"/>
+   <linked-el length="73" name="%0" offset="6366" path="%1"/>
+   <linked-el length="59" name="%0" offset="6622" path="%1"/>
+   <linked-el length="61" name="%0" offset="4907" path="%1"/>
+   <linked-el length="57" name="%0" offset="5874" path="%1"/>
+   <linked-el length="59" name="%0" offset="5393" path="%1"/>
+   <linked-el length="60" name="%0" offset="4400" path="%1"/>
+   <linked-el length="57" name="%0" offset="6112" path="%1"/>
+   <linked-el length="59" name="%0" offset="5151" path="%1"/>
+   <linked-el length="60" name="%0" offset="4644" path="%1"/>
+   <linked-el length="58" name="%0" offset="5635" path="%1"/>
+   <linked-el length="62" name="%0" offset="6867" path="%1"/>
+   <linked-el length="20" name="%2" offset="1640" path="%1"/>
+   <linked-el length="20" name="%2" offset="1409" path="%1"/>
+   <linked-el length="73" name="%3" offset="6366" path="%1"/>
+   <linked-el length="59" name="%3" offset="6622" path="%1"/>
+   <linked-el length="21" name="%3" offset="7516" path="%1"/>
+   <linked-el length="61" name="%3" offset="4907" path="%1"/>
+   <linked-el length="57" name="%3" offset="5874" path="%1"/>
+   <linked-el length="59" name="%3" offset="5393" path="%1"/>
+   <linked-el length="60" name="%3" offset="4400" path="%1"/>
+   <linked-el length="57" name="%3" offset="6112" path="%1"/>
+   <linked-el length="59" name="%3" offset="5151" path="%1"/>
+   <linked-el length="60" name="%3" offset="4644" path="%1"/>
+   <linked-el length="58" name="%3" offset="5635" path="%1"/>
+   <linked-el length="62" name="%3" offset="6867" path="%1"/>
+   <linked-el length="21" name="%4" offset="7516" path="%1"/>
+   <linked-el length="20" name="%5" offset="1640" path="%1"/>
+   <linked-el length="20" name="%5" offset="1409" path="%1"/>
+   <linked-el length="31" name="%5" offset="7903" path="%1"/>
+   <linked-el length="26" name="%5" offset="8486" path="%1"/>
+   <linked-el length="21" name="%5" offset="9334" path="%1"/>
+   <linked-el length="21" name="%5" offset="7637" path="%1"/>
+   <linked-el length="31" name="%6" offset="7903" path="%1"/>
+   <linked-el length="31" name="%7" offset="7903" path="%1"/>
+   <linked-el length="21" name="%8" offset="9334" path="%1"/>
+   <linked-el length="21" name="%8" offset="7637" path="%1"/>
+   <linked-el length="31" name="%9" offset="7903" path="%1"/>
+   <linked-el length="26" name="%10" offset="8486" path="%1"/>
+   <linked-el length="20" name="%11" offset="1640" path="%1"/>
+   <linked-el length="20" name="%11" offset="1409" path="%1"/>
+   <linked-el length="21" name="%12" offset="9334" path="%1"/>
+   <linked-el length="21" name="%12" offset="7637" path="%1"/>
+   <linked-el length="26" name="%13" offset="8486" path="%1"/>
   </el>
  </validation>
  <aliases>

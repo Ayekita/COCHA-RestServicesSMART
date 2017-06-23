@@ -8,12 +8,15 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.apache.commons.lang3.SerializationUtils;
+
 import com.cocha.servicefasttwo.business.ServiceFast2;
 import com.cocha.servicefasttwo.domain.Response;
 import com.cocha.servicefasttwo.persistance.SmartConnections;
 
 @Path("/ServiceFastTwo")
 public class ServiceFastTwo {
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/get/negocio={negocio}&moneda={moneda}&valor={valor}&spnr={spnr}")
@@ -21,16 +24,18 @@ public class ServiceFastTwo {
 			@PathParam("valor") double valor, @PathParam("spnr") String spnr){
 		Connection conSmart = null;
 		Response respuesta = null;
+		
 		try {
 			SmartConnections conectame = SmartConnections.getInstance();
 			conSmart = conectame.getConnSmart();
 			ServiceFast2 ejecutar = new ServiceFast2();
-			respuesta = ejecutar.procesoPrincipal(negocio, moneda, valor, spnr, conSmart);
+			respuesta =  SerializationUtils.clone(ejecutar.procesoPrincipal(negocio, moneda, valor, spnr, conSmart));
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
-		return respuesta;
+		
+		return  respuesta;
 	}
 
 }

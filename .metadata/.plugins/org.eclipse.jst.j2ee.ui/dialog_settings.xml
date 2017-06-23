@@ -3,6 +3,9 @@
 	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
 	<item value="false" key="J2EE_EXPORT_SOURCE"/>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\avaldivia\Documents\Proyectos Java\ServiceFastTwo.war"/>
+		<item value="C:\Users\avaldivia\Documents\Proyectos Java\LineaCreditoNemo.war"/>
+		<item value="E:\Proyectos Java\LineaCreditoNemo.war"/>
 		<item value="E:\Proyectos Java\SmartServices.war"/>
 	</list>
 </section>

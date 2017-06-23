@@ -107,8 +107,8 @@
 			<item value="jboss-javaee-webapp"/>
 		</list>
 		<list key="packageCombo">
-			<item value="com.cocha"/>
 			<item value="org.jboss.tools.examples"/>
+			<item value="com.cocha"/>
 			<item value="cl.cocha"/>
 		</list>
 		<list key="location">
@@ -124,16 +124,12 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.cocha"/>
-			<item value="org.ModuleSmartCon"/>
+			<item value="org.jboss.tools.examples"/>
 		</list>
 		<list key="groupId">
-			<item value="com.cocha"/>
+			<item value="org.jboss.tools.examples"/>
 		</list>
 		<list key="artifactId">
-			<item value="LineaCreaditoNemo"/>
-			<item value="LineaCreditoNemo"/>
-			<item value="ModuleSmartCon"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -144,7 +140,7 @@
 			<item value="[name]"/>
 		</list>
 		<list key="version">
-			<item value="1.0.0"/>
+			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">

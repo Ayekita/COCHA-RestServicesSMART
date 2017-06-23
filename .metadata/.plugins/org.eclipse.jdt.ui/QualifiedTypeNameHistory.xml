@@ -20,7 +20,6 @@
 <fullyQualifiedTypeName name="com.cocha.utils.PropertiesUtil"/>
 <fullyQualifiedTypeName name="com.unisys.jdbc.dmsql.SQLException"/>
 <fullyQualifiedTypeName name="javax.xml.ws.Response"/>
-<fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response.StatusType"/>
 <fullyQualifiedTypeName name="com.cocha.servicefasttwo.domain.StringResponse"/>
 <fullyQualifiedTypeName name="com.qq.connect.utils.json.JSONObject"/>
@@ -36,9 +35,21 @@
 <fullyQualifiedTypeName name="javax.ws.rs.core.Application"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="com.cocha.persistance.SmartConnections"/>
-<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
-<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
-<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+<fullyQualifiedTypeName name="com.cocha.domain.respuestaLcSg"/>
+<fullyQualifiedTypeName name="com.cocha.servicefasttwo.domain.Response"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.Response.ResponseBuilder"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
+<fullyQualifiedTypeName name="org.codehaus.jackson.map.annotate.JsonSerialize"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.output.ByteArrayOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="org.springframework.util.SerializationUtils"/>
+<fullyQualifiedTypeName name="org.springframework.objenesis.instantiator.SerializationInstantiatorHelper"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.SerializationUtils"/>
 </qualifiedTypeNameHistroy>
