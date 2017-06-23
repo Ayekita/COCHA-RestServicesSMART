@@ -1,0 +1,28 @@
+package com.cocha.domain;
+
+public class Fmcte
+{
+	private String moneda;
+	private int tipoMov;
+	private long montoTrans;
+	
+	public String getMoneda() {
+		return moneda;
+	}
+	public void setMoneda(String moneda) {
+		this.moneda = moneda;
+	}
+	public int getTipoMov() {
+		return tipoMov;
+	}
+	public void setTipoMov(int tipoMov) {
+		this.tipoMov = tipoMov;
+	}
+	public long getMontoTrans() {
+		return montoTrans;
+	}
+	public void setMontoTrans(long montoTrans) {
+		this.montoTrans = montoTrans;
+	}
+
+}

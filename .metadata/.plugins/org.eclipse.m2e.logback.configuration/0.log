@@ -11599,3 +11599,1149 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.cocha:Sma
 2017-06-22 18:29:48,053 [Worker-105] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
 2017-06-22 18:29:48,217 [Worker-105] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SmartLineaCreditoNemo
 2017-06-22 18:29:48,237 [Worker-105] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2017-06-22 18:47:26,507 [Worker-101] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-22 18:47:26,733 [Worker-101] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:398) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </dependencies> must match start tag name <dependency> from line 234 (position: TEXT seen ...<dependency>\r\n\t\t\r\n    </dependencies>... @236:20) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	... 16 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </dependencies> must match start tag name <dependency> from line 234 (position: TEXT seen ...<dependency>\r\n\t\t\r\n    </dependencies>... @236:20) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1727) ~[plexus-utils-3.0.22.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1169) ~[plexus-utils-3.0.22.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1131) ~[plexus-utils-3.0.22.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1118) ~[plexus-utils-3.0.22.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1350) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2235) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[maven-model-3.3.9.jar:3.3.9]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117) ~[maven-model-builder-3.3.9.jar:3.3.9]
+	... 18 common frames omitted
+2017-06-22 18:47:27,417 [Worker-101] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-22 18:47:31,638 [Worker-101] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/main/java
+2017-06-22 18:47:31,646 [Worker-101] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SmartLineaCreditoNemo/src/main/resources
+2017-06-22 18:47:31,659 [Worker-101] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/test/java
+2017-06-22 18:47:34,568 [Worker-101] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SmartLineaCreditoNemo
+2017-06-22 18:47:34,588 [Worker-101] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2017-06-22 18:48:25,091 [Worker-88] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-22 18:48:25,820 [Worker-88] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 18:48:26,579 [Worker-88] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-22 18:48:30,973 [Worker-88] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-22 18:48:30,978 [Worker-88] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-22 18:48:30,983 [Worker-88] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-22 18:48:34,033 [Worker-88] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/main/java
+2017-06-22 18:48:34,041 [Worker-88] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SmartLineaCreditoNemo/src/main/resources
+2017-06-22 18:48:34,049 [Worker-88] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/test/java
+2017-06-22 18:48:36,469 [Worker-88] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-22 18:48:36,538 [Worker-88] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SmartLineaCreditoNemo
+2017-06-22 18:48:36,552 [Worker-88] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2017-06-22 19:17:12,637 [Worker-88] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartServices:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 19:17:30,907 [Worker-115] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartServices:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 19:18:04,217 [Worker-117] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-22 19:18:04,909 [Worker-117] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-22 19:18:08,449 [Worker-117] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-22 19:18:08,454 [Worker-117] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-22 19:18:08,460 [Worker-117] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-22 19:18:10,547 [Worker-117] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-22 19:18:10,556 [Worker-117] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2017-06-22 19:21:26,075 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2aba6598{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-06-22 19:21:26,129 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@72d3ecb1{/help,null,UNAVAILABLE}
+2017-06-23 09:32:31,844 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:32:31,863 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:32:31,887 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:32:31,888 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 09:32:31,931 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 09:32:31,932 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 09:32:31,938 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:32:31,953 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:32:31,968 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:32:31,980 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:32:32,116 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-06-23 09:32:32,214 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:32:32,222 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:32:32,230 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:32:32,238 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:32:32,251 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:32:49,579 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:32:49,581 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:32:49,601 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:32:49,602 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:32:49,607 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SmartLineaCreditoNemo
+2017-06-23 09:32:49,612 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SmartLineaCreditoNemo
+2017-06-23 09:32:49,621 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:32:49,632 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:32:49,647 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:32:49,657 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:32:49,689 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:33:55,115 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:33:55,206 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:33:55,208 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:33:55,208 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 09:34:10,115 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:34:10,139 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:34:10,142 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:34:10,150 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:36:27,605 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:36:27,620 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:36:27,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:36:27,630 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 09:36:39,740 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:36:39,741 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:36:39,744 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:36:39,745 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:38:39,558 [Worker-24] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 09:38:42,351 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-23 09:38:43,492 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-23 09:38:51,105 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-23 09:38:51,106 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-23 09:38:51,107 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-23 09:38:54,246 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/main/java
+2017-06-23 09:38:54,247 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SmartLineaCreditoNemo/src/main/resources
+2017-06-23 09:38:54,252 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/test/java
+2017-06-23 09:38:57,610 [Worker-24] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-23 09:38:57,908 [Worker-24] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SmartLineaCreditoNemo
+2017-06-23 09:38:57,932 [Worker-24] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 18 sec
+2017-06-23 09:39:04,758 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:39:04,765 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:39:04,799 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:39:04,799 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 09:39:04,806 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 09:39:04,807 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 09:39:04,815 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:39:04,862 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:39:04,876 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:39:04,884 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:39:04,891 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-06-23 09:39:04,903 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:39:04,921 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:39:04,934 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:39:04,943 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:39:04,955 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:39:11,018 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:39:11,020 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:39:11,037 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:39:11,039 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:39:11,040 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SmartLineaCreditoNemo
+2017-06-23 09:39:11,046 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SmartLineaCreditoNemo
+2017-06-23 09:39:11,053 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:39:11,063 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:39:11,072 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:39:11,081 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:39:11,108 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:43:33,268 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-23 09:43:35,920 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:43:35,923 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:43:35,926 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:43:35,926 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:43:35,932 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SmartLineaCreditoNemo
+2017-06-23 09:43:35,938 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SmartLineaCreditoNemo
+2017-06-23 09:43:35,948 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:43:35,956 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:43:35,971 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:43:35,980 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:43:35,988 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:43:35,997 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:43:36,050 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:43:36,066 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:43:36,088 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:43:44,747 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 09:43:45,036 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:SmartLineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\pom.xml.
+2017-06-23 09:43:46,936 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/main/java
+2017-06-23 09:43:46,942 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SmartLineaCreditoNemo/src/main/resources
+2017-06-23 09:43:46,947 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SmartLineaCreditoNemo/src/test/java
+2017-06-23 09:43:49,389 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SmartLineaCreditoNemo
+2017-06-23 09:43:49,404 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-06-23 09:43:55,330 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:43:55,331 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:43:55,353 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:43:55,359 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:43:55,366 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SmartLineaCreditoNemo
+2017-06-23 09:43:55,366 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SmartLineaCreditoNemo
+2017-06-23 09:43:55,377 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:43:55,387 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:43:55,398 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:43:55,408 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:43:55,423 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:43:55,434 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:43:55,446 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:43:55,463 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:43:55,474 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:46:37,733 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:46:37,747 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:46:37,749 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:46:37,749 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\SmartLineaCreditoNemo\src\test\resources
+2017-06-23 09:50:39,311 [ModalContext] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml
+2017-06-23 09:50:39,586 [ModalContext] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:50:40,697 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 09:50:40,698 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 09:50:40,728 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 09:50:40,729 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 09:50:43,759 [ModalContext] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2017-06-23 09:50:45,725 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:50:45,727 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:50:45,743 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:50:45,745 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:51:23,113 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:51:23,117 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:51:23,124 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:51:23,125 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:51:39,327 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:51:39,330 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:51:39,332 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:51:39,333 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:52:42,561 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:52:42,571 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:52:42,579 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:52:42,580 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:53:28,583 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:53:28,584 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:53:28,585 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:53:28,585 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:53:40,016 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:53:40,021 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:53:40,026 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:53:40,027 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:53:53,593 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:53:53,595 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:53:53,596 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:53:53,597 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:54:00,554 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:54:00,560 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:54:00,567 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:54:00,568 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:55:24,533 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:55:27,554 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:55:27,555 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:55:27,557 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:55:27,563 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:55:27,567 [Worker-28] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 09:55:27,573 [Worker-28] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 09:55:27,578 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:55:27,590 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:55:27,599 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:55:27,607 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:55:27,615 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:55:30,757 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:55:30,761 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:55:30,771 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:55:30,773 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:55:37,439 [Worker-10] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DoTest (1) references closed project SmartLineaCreditoNemo
+org.eclipse.core.runtime.CoreException: Launch configuration DoTest (1) references closed project SmartLineaCreditoNemo
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:309) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-06-23 09:55:37,523 [Worker-10] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DoTest (1) references closed project SmartLineaCreditoNemo
+org.eclipse.core.runtime.CoreException: Launch configuration DoTest (1) references closed project SmartLineaCreditoNemo
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:310) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-06-23 09:55:37,560 [Worker-10] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DoTest (1) references closed project SmartLineaCreditoNemo
+org.eclipse.core.runtime.CoreException: Launch configuration DoTest (1) references closed project SmartLineaCreditoNemo
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2161) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:384) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:250) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:220) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:173) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:311) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-06-23 09:55:51,163 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 09:55:52,106 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:55:52,976 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-23 09:55:56,537 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 09:55:56,545 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 09:55:56,554 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 09:55:56,554 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 09:55:58,881 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-23 09:55:58,882 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-23 09:55:58,893 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-23 09:56:01,365 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreditoNemo
+2017-06-23 09:56:01,515 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-23 09:56:01,538 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2017-06-23 09:56:12,068 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:56:12,069 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:56:12,098 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:56:12,117 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:56:12,134 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 09:56:12,134 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 09:56:12,141 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:56:12,165 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:56:12,193 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:56:12,205 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:56:12,223 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:56:14,535 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:56:14,536 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:56:14,545 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:56:14,546 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 09:56:14,546 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 09:56:14,552 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 09:56:14,556 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:56:14,577 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:56:14,589 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:56:14,609 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:56:14,621 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:56:14,635 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:56:14,647 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 09:56:14,662 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 09:56:14,671 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:57:03,736 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:57:05,817 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:57:05,818 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:57:05,820 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:57:05,821 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:57:05,822 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 09:57:05,826 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 09:57:05,829 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:57:05,835 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:57:05,842 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:57:05,852 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:57:05,860 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:57:17,881 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 09:57:18,202 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:57:19,846 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 09:57:19,847 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 09:57:19,853 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 09:57:19,858 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 09:57:22,154 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreditoNemo
+2017-06-23 09:57:22,170 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-06-23 09:57:23,719 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:57:23,719 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 09:57:23,736 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:57:23,741 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:57:23,748 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 09:57:23,748 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 09:57:23,759 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:57:23,767 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:57:23,777 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:57:23,786 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:57:23,802 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:58:47,590 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:58:50,523 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:58:50,526 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:58:50,527 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:58:50,528 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:58:50,529 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 09:58:50,529 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 09:58:50,536 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:58:50,545 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:58:50,554 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:58:50,562 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:58:50,577 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:59:03,967 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 09:59:06,482 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:59:06,484 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:59:06,490 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 09:59:06,491 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 09:59:06,497 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 09:59:06,497 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 09:59:06,504 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:59:06,516 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:59:06,525 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 09:59:06,536 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 09:59:06,555 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:07:14,893 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:07:18,008 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:07:18,010 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:07:18,011 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:07:18,012 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:07:18,012 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:07:18,012 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:07:18,015 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:07:18,024 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:07:18,031 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:07:18,038 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:07:18,045 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:07:18,053 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:07:18,063 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:07:18,071 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:07:18,087 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:09:09,268 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:09:09,291 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:09:09,304 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:09:09,305 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:09:14,053 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:09:14,056 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:09:14,058 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:09:14,059 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 10:11:19,746 [main] ERROR o.e.m2e.editor.pom.OverviewPage - Failed to populate overview panel
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.core.ui.internal.editing.PomEdits.performOnDOMDocument(PomEdits.java:510) ~[org.eclipse.m2e.core.ui_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.editor.pom.OverviewPage$17.run(OverviewPage.java:1129) ~[na:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.105.3.v20170228-0512.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182) [org.eclipse.swt.win32.win32.x86_64_3.105.3.v20170228-0512.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211) [org.eclipse.swt.win32.win32.x86_64_3.105.3.v20170228-0512.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827) [org.eclipse.swt.win32.win32.x86_64_3.105.3.v20170228-0512.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121) [org.eclipse.e4.ui.workbench.swt_0.14.1.v20160829-0832.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336) [org.eclipse.core.databinding.observable_1.6.0.v20160511-1747.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022) [org.eclipse.e4.ui.workbench.swt_0.14.1.v20160829-0832.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150) [org.eclipse.e4.ui.workbench_1.4.0.v20160517-1624.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693) [org.eclipse.ui.workbench_3.108.3.v20170216-1539.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336) [org.eclipse.core.databinding.observable_1.6.0.v20160511-1747.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610) [org.eclipse.ui.workbench_3.108.3.v20170216-1539.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148) [org.eclipse.ui.workbench_3.108.3.v20170216-1539.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138) [org.eclipse.ui.ide.application_1.1.101.v20160829-0827.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.400.v20150715-1528.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.11.3.v20170209-1843.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.11.3.v20170209-1843.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388) [org.eclipse.osgi_3.11.3.v20170209-1843.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243) [org.eclipse.osgi_3.11.3.v20170209-1843.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
+2017-06-23 10:11:20,941 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:11:25,011 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:11:25,020 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:11:25,023 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:11:25,024 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:11:25,026 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:11:25,031 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:11:25,073 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:11:25,086 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:11:25,096 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:11:25,106 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:11:25,125 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-06-23 10:11:25,156 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:11:25,164 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:11:25,174 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:11:25,189 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:11:25,203 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:11:35,297 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 10:11:36,658 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:11:37,867 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-23 10:11:42,712 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 10:11:42,713 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 10:11:42,714 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 10:11:42,721 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 10:11:45,771 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-23 10:11:45,771 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-23 10:11:45,773 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-23 10:11:49,024 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreditoNemo
+2017-06-23 10:11:49,233 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-23 10:11:49,256 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 13 sec
+2017-06-23 10:11:57,718 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:11:57,723 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:11:57,751 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:11:57,762 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:11:57,762 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:11:57,769 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:11:57,775 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:11:57,789 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:11:57,802 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:11:57,821 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:11:57,833 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:11:57,860 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:11:57,869 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:11:57,881 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:11:57,904 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:12:00,649 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:12:00,651 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:12:00,662 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:12:00,662 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 10:12:00,662 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 10:12:00,663 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 10:12:00,665 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:12:00,672 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:12:00,679 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:12:00,685 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:12:00,696 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:12:00,703 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:12:00,710 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:12:00,717 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:12:00,731 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:27,894 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo2:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:13:30,349 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:30,351 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:13:30,357 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:30,358 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:13:30,362 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:13:30,362 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:13:30,369 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:13:30,376 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:13:30,383 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:13:30,391 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:13:30,404 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:13:30,411 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:13:30,418 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:13:30,424 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:13:30,447 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:37,280 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:13:38,974 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:38,974 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:13:38,976 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:38,977 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:13:38,977 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:13:38,977 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:13:38,980 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:13:38,986 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:13:38,993 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:13:38,999 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:13:39,010 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:13:39,017 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:13:39,023 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:13:39,030 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:13:39,090 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:13:58,717 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo2:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo2\pom.xml.
+2017-06-23 10:14:04,035 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:14:04,037 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:14:04,151 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:14:04,152 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:14:09,847 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:14:09,856 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:14:09,875 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:14:09,881 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:15:00,700 [ModalContext] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreaditoNemo\pom.xml
+2017-06-23 10:15:01,060 [ModalContext] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreaditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreaditoNemo\pom.xml.
+2017-06-23 10:15:02,074 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreaditoNemo/src/main/java
+2017-06-23 10:15:02,078 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreaditoNemo/src/main/resources
+2017-06-23 10:15:02,114 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreaditoNemo/src/test/java
+2017-06-23 10:15:02,115 [ModalContext] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreaditoNemo/src/test/resources
+2017-06-23 10:15:04,884 [ModalContext] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2017-06-23 10:15:05,810 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:15:05,811 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:15:05,821 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:15:05,828 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:16:02,278 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:16:02,282 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:16:02,290 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:16:02,297 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:16:07,364 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:16:07,365 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:16:07,367 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:16:07,373 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:17:30,120 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreaditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreaditoNemo\pom.xml.
+2017-06-23 10:17:32,467 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:17:32,471 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:17:32,476 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:17:32,477 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:17:32,483 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreaditoNemo
+2017-06-23 10:17:32,483 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreaditoNemo
+2017-06-23 10:17:32,490 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:17:32,496 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:17:32,503 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:17:32,512 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:17:32,540 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:17:36,326 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:17:36,332 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:17:36,345 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:17:36,352 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:18:45,100 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreaditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreaditoNemo\pom.xml.
+2017-06-23 10:18:47,138 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:18:47,142 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:18:47,148 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:18:47,149 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:18:47,153 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreaditoNemo
+2017-06-23 10:18:47,153 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreaditoNemo
+2017-06-23 10:18:47,161 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:18:47,168 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:18:47,177 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:18:47,185 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:18:47,197 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:18:49,107 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-23 10:18:51,032 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:18:51,033 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:18:51,042 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:18:51,043 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 10:18:51,050 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 10:18:51,050 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 10:18:51,061 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:18:51,071 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:18:51,081 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:18:51,090 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:18:51,101 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:18:51,107 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:18:51,114 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:18:51,120 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:18:51,129 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:19:01,487 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 10:19:01,854 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreaditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreaditoNemo\pom.xml.
+2017-06-23 10:19:02,513 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-23 10:19:04,527 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreaditoNemo/src/main/java
+2017-06-23 10:19:04,527 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreaditoNemo/src/main/resources
+2017-06-23 10:19:04,528 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreaditoNemo/src/test/java
+2017-06-23 10:19:04,529 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreaditoNemo/src/test/resources
+2017-06-23 10:19:06,997 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-23 10:19:07,006 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-23 10:19:07,012 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-23 10:19:10,007 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreaditoNemo
+2017-06-23 10:19:10,090 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-23 10:19:10,128 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2017-06-23 10:19:16,950 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:19:16,951 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:19:16,979 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:19:16,986 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:19:16,992 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreaditoNemo
+2017-06-23 10:19:16,992 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreaditoNemo
+2017-06-23 10:19:17,001 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:19:17,012 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:19:17,022 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:19:17,032 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:19:17,043 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:19:18,726 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:19:18,727 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:19:18,736 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:19:18,740 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 10:19:18,741 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 10:19:18,745 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 10:19:18,747 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:19:18,757 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:19:18,764 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:19:18,770 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:19:18,778 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:19:18,788 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:19:18,794 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:19:18,801 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:19:18,808 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:02,671 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:02,675 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:20:02,677 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:02,678 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:20:46,154 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:46,157 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:20:46,158 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:46,159 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:20:53,252 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:53,257 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:20:53,259 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:53,260 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:20:59,589 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:59,591 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:20:59,592 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:20:59,593 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:21:11,220 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:21:11,226 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:21:11,233 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:21:11,234 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:21:15,492 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:21:15,495 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:21:15,497 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:21:15,498 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:22:16,106 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:22:16,109 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:22:16,116 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:22:16,117 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:25:16,329 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreaditoNemo\pom.xml.
+2017-06-23 10:25:18,494 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:18,495 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:25:18,496 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:18,501 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:25:18,507 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreaditoNemo
+2017-06-23 10:25:18,511 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreaditoNemo
+2017-06-23 10:25:18,513 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:25:18,524 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:25:18,530 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:25:18,536 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:25:18,544 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:26,592 [Worker-5] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DoTest (2) references non-existing project LineaCreaditoNemo.
+org.eclipse.core.runtime.CoreException: Launch configuration DoTest (2) references non-existing project LineaCreaditoNemo.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1283) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:309) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-06-23 10:25:26,611 [Worker-5] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DoTest (2) references non-existing project LineaCreaditoNemo.
+org.eclipse.core.runtime.CoreException: Launch configuration DoTest (2) references non-existing project LineaCreaditoNemo.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1283) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:310) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-06-23 10:25:26,643 [Worker-5] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration DoTest (2) references non-existing project LineaCreaditoNemo.
+org.eclipse.core.runtime.CoreException: Launch configuration DoTest (2) references non-existing project LineaCreaditoNemo.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1283) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2161) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:384) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:250) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:220) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:173) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:311) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.1.20161104-1805.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-06-23 10:25:28,935 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:25:31,365 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:31,366 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:25:31,390 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:31,403 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:25:38,969 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:38,972 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:25:38,981 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:25:38,982 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:25:45,004 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 10:25:45,885 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:25:46,649 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:ServiceFastTwo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\pom.xml.
+2017-06-23 10:25:50,332 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 10:25:50,345 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 10:25:50,359 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 10:25:50,369 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 10:25:52,267 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/main/java
+2017-06-23 10:25:52,275 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServiceFastTwo/src/main/resources
+2017-06-23 10:25:52,284 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServiceFastTwo/src/test/java
+2017-06-23 10:25:54,531 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreditoNemo
+2017-06-23 10:25:54,630 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ServiceFastTwo
+2017-06-23 10:25:54,657 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2017-06-23 10:26:00,744 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:26:00,752 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:26:00,778 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:26:00,786 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:26:00,787 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:26:00,790 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:26:00,794 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:26:00,809 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:26:00,818 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:26:00,828 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:26:00,838 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:26:03,407 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:26:03,408 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:26:03,418 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:26:03,418 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 10:26:03,418 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ServiceFastTwo
+2017-06-23 10:26:03,418 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ServiceFastTwo
+2017-06-23 10:26:03,421 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:26:03,434 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:26:03,450 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:26:03,468 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:26:03,481 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:26:03,495 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:26:03,507 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:26:03,520 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:26:03,535 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:29:11,541 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:29:13,373 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:29:13,375 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:29:13,376 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:29:13,377 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:29:13,381 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:29:13,386 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:29:13,395 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:29:13,408 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:29:13,422 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:29:13,430 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:29:13,438 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:34:03,210 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:34:05,007 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:34:05,008 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:34:05,009 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:34:05,010 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:34:05,017 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:34:05,017 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:34:05,025 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:34:05,032 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:34:05,053 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:34:05,062 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:34:05,071 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:34:05,083 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:34:05,112 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:34:05,122 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:34:05,134 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:35:06,993 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 10:35:07,787 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:35:10,589 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 10:35:10,590 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 10:35:10,591 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 10:35:10,598 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 10:35:13,422 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreditoNemo
+2017-06-23 10:35:13,438 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2017-06-23 10:35:18,097 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:35:18,103 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:35:18,130 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:35:18,136 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:35:18,137 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:35:18,143 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:35:18,147 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:35:18,158 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:35:18,173 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:35:18,186 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:35:18,196 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:35:18,204 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:35:18,212 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:35:18,226 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:35:18,237 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:38:59,976 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:38:59,980 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:38:59,981 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:38:59,982 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:39:11,727 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:39:11,731 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:39:11,733 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:39:11,733 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:40:06,642 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:06,652 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:40:06,655 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:06,656 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:40:29,352 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:29,354 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:40:29,360 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:29,361 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:40:50,158 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:50,162 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:40:50,168 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:50,177 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:40:52,968 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:52,972 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:40:52,983 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:52,990 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:40:58,353 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:58,356 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:40:58,363 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:40:58,368 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:41:01,920 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:41:01,923 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:41:01,932 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:41:01,939 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:42:03,700 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:42:03,703 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:42:03,720 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:42:03,736 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:46:20,934 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:20,939 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:46:20,948 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:20,962 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:46:40,072 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:40,073 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:46:40,078 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:40,083 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:46:43,021 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:43,024 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:46:43,032 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:43,054 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:46:48,808 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:48,813 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:46:48,824 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:46:48,837 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:47:04,583 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-06-23 10:47:05,381 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cocha:LineaCreditoNemo:1.0.0 @ C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\LineaCreditoNemo\pom.xml.
+2017-06-23 10:47:08,486 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/main/java
+2017-06-23 10:47:08,490 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/main/resources
+2017-06-23 10:47:08,495 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LineaCreditoNemo/src/test/java
+2017-06-23 10:47:08,496 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LineaCreditoNemo/src/test/resources
+2017-06-23 10:47:10,388 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for LineaCreditoNemo
+2017-06-23 10:47:10,400 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2017-06-23 10:47:12,934 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:47:12,936 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:47:12,962 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:47:12,968 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:47:12,976 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LineaCreditoNemo
+2017-06-23 10:47:12,976 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LineaCreditoNemo
+2017-06-23 10:47:12,983 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:47:12,992 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:47:13,002 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:47:13,010 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:47:13,022 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final is missing, no dependency information available
+2017-06-23 10:47:13,029 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final: Plugin org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.wildfly.plugins:wildfly-maven-plugin:jar:1.0.2.Final has not been downloaded from it before.
+2017-06-23 10:47:13,037 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 is missing, no dependency information available
+2017-06-23 10:47:13,044 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:3.0.0: Plugin org.apache.maven.plugins:maven-assembly-plugin:3.0.0 or one of its dependencies could not be resolved: Cannot access central (https://repo.maven.apache.org/maven2) in offline mode and the artifact org.apache.maven.plugins:maven-assembly-plugin:jar:3.0.0 has not been downloaded from it before.
+2017-06-23 10:47:13,054 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:49:03,180 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:49:03,194 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:49:03,207 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:49:03,208 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:49:12,332 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:49:12,336 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:49:12,343 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:49:12,343 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 10:55:58,454 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:55:58,486 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:55:58,489 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:55:58,490 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 10:58:33,294 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:58:33,300 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 10:58:33,303 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 10:58:33,304 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:01:21,908 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:01:21,912 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:01:21,915 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:01:21,916 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:04:40,465 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:04:40,490 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:04:40,498 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:04:40,499 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:05:01,800 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:05:01,815 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:05:01,819 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:05:01,823 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:11:18,695 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1423501ms
+2017-06-23 11:11:19,067 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-06-23 11:11:19,180 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@32bba5d1{/help,null,AVAILABLE}
+2017-06-23 11:11:19,219 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1fb9fa90{HTTP/1.1,[http/1.1]}{127.0.0.1:64924}
+2017-06-23 11:11:19,224 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1424031ms
+2017-06-23 11:11:26,755 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:11:26,768 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:11:26,777 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:11:26,785 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:14:59,839 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:14:59,843 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:14:59,845 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:14:59,853 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:15:05,567 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:15:05,651 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:15:05,675 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:15:05,694 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:17:09,524 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:17:09,527 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:17:09,528 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:17:09,534 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:17:20,404 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:17:20,411 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:17:20,417 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:17:20,424 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:17:37,064 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:17:37,069 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:17:37,072 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:17:37,092 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:21:38,931 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:21:38,939 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:21:38,947 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:21:38,954 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:30:12,327 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:30:12,330 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:30:12,333 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:30:12,340 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:32:09,691 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:09,708 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:32:09,717 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:09,723 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:32:16,904 [Worker-51] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar
+2017-06-23 11:32:18,139 [Worker-51] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar
+2017-06-23 11:32:20,726 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:20,731 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:32:20,736 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:20,742 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:32:43,566 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:43,576 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:32:43,585 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:43,592 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:32:46,743 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:46,753 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:32:46,759 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:32:46,766 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:33:22,413 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:33:22,422 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:33:22,452 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:33:22,466 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:36:07,043 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:36:07,203 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:36:07,218 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:36:07,225 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:36:27,887 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:36:27,921 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:36:27,930 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:36:28,032 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:40:58,466 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:40:58,476 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:40:58,483 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:40:58,489 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:43:06,714 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:43:06,721 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:43:06,729 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:43:06,734 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:46:00,917 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:46:00,929 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:46:00,938 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:46:00,946 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:50:18,078 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:50:18,097 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:50:18,112 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:50:18,119 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:51:51,631 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:51:51,640 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:51:51,647 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:51:51,654 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:53:11,092 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:53:11,100 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:53:11,163 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:53:11,177 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:53:17,542 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:53:17,550 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:53:17,557 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:53:17,564 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:54:50,210 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:54:50,315 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:54:50,326 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:54:50,332 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:56:09,705 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:56:09,720 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:56:09,727 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:56:09,741 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:57:09,565 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:57:09,585 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:57:09,595 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:57:09,601 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:57:24,280 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:57:24,288 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:57:24,297 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:57:24,305 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:57:33,791 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:57:33,799 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:57:33,805 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:57:33,811 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:58:44,877 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:58:44,887 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:58:44,897 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:58:44,911 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 11:59:12,821 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:59:12,829 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 11:59:12,839 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 11:59:12,846 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-23 12:03:28,755 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:03:28,848 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:03:28,860 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:03:28,881 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:03:41,540 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:03:41,549 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:03:41,558 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:03:41,571 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:04:13,265 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:04:13,277 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:04:13,291 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:04:13,298 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:06:20,625 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:20,634 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:06:20,643 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:20,650 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:06:31,794 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:31,814 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:06:31,822 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:31,829 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:06:39,254 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:39,285 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:06:39,293 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:39,299 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:06:52,179 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:52,190 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:06:52,235 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:52,242 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:06:56,455 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:56,464 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:06:56,472 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:06:56,478 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources
+2017-06-23 12:07:22,276 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:07:22,284 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-23 12:07:22,293 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-23 12:07:22,300 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\avaldivia\Documents\Proyectos Java\RestServicesSmart\RestServicesSMART\ServiceFastTwo\src\test\resources

@@ -1,0 +1,30 @@
+package com.cocha.domain;
+
+import javax.ws.rs.Path;
+
+@Path("/repuesta")
+public class respuestaLcSg {
+	private String lineaCredito;
+	private String sobreGiro;
+	private String status;
+	public String getLineaCredito() {
+		return lineaCredito;
+	}
+	public void setLineaCredito(String lineaCredito) {
+		this.lineaCredito = lineaCredito;
+	}
+	public String getSobreGiro() {
+		return sobreGiro;
+	}
+	public void setSobreGiro(String sobreGiro) {
+		this.sobreGiro = sobreGiro;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	
+}

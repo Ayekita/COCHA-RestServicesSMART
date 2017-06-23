@@ -1,0 +1,6 @@
+package com.cocha.domain;
+
+public class respuestaLcSg {
+	private String lineaCredito;
+	private String sobreGiro;
+}

@@ -2,14 +2,15 @@ package com.cocha.servicefasttwo.business;
 
 import java.sql.Connection;
 
+import com.cocha.servicefasttwo.domain.Response;
 import com.cocha.servicefasttwo.persistance.SmartDao;
 import com.cocha.servicefasttwo.utils.FechasUtil;
 
 public class ServiceFast2 {	
-	public String procesoPrincipal(String negocio, String moneda, double valor, String spnr, Connection conJdbc) throws Exception  {
+	public Response procesoPrincipal(String negocio, String moneda, double valor, String spnr, Connection conJdbc) throws Exception  {
 		FechasUtil funciones = new FechasUtil();
 		System.out.println("## Inicio FEE FASTII " + funciones.getFechaHora() + " ##");
-		String respuesta = null;
+		Response respuesta = new Response();
 		try {
 			int numped = 0;
 			SmartDao smartDao = new SmartDao();
@@ -19,14 +20,14 @@ public class ServiceFast2 {
 			}
 			if(!smartDao.existeFee(negocio, spnr, moneda, numped, conJdbc)) {
 				if(smartDao.insertarFee(negocio, numped, moneda, valor, spnr, conJdbc)) {
-					respuesta = "FEE OK!";
+					respuesta.setStatus("FEE OK!");
 				}
 			} else {
-				respuesta = "FEE YA EXISTE!";
+				respuesta.setStatus("FEE YA EXISTE!");
 			}
 		} 
 		catch (Exception e) {
-			respuesta = e.toString();
+			e.printStackTrace();
 		}
 		System.out.println("## Fin FEE FASTII " + funciones.getFechaHora() + " ##");
 		return respuesta;

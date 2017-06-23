@@ -6,20 +6,21 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 import com.cocha.servicefasttwo.business.ServiceFast2;
+import com.cocha.servicefasttwo.domain.Response;
 import com.cocha.servicefasttwo.persistance.SmartConnections;
-import com.qq.connect.utils.json.JSONObject;
 
 @Path("/ServiceFastTwo")
 public class ServiceFastTwo {
 	@GET
-	@Produces({ "application/json" })
-	@Path("/doService/negocio={negocio}&moneda={moneda}&valor={valor}&spnr={spnr}")
-	public String doService(@PathParam("negocio") String negocio, @PathParam("moneda") String moneda,
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/get/negocio={negocio}&moneda={moneda}&valor={valor}&spnr={spnr}")
+	public Response doService(@PathParam("negocio") String negocio, @PathParam("moneda") String moneda,
 			@PathParam("valor") double valor, @PathParam("spnr") String spnr){
 		Connection conSmart = null;
-		String respuesta = null;
+		Response respuesta = null;
 		try {
 			SmartConnections conectame = SmartConnections.getInstance();
 			conSmart = conectame.getConnSmart();
@@ -29,7 +30,7 @@ public class ServiceFastTwo {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
-		return JSONObject.quote(respuesta);
+		return respuesta;
 	}
 
 }

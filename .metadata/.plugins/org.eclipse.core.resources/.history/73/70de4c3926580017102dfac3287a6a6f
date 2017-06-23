@@ -1,0 +1,8 @@
+package com.cocha.ws;
+
+import javax.ws.rs.Path;
+
+@Path("/ControlFacturacion")
+public class CtrlFacturacionFinanzas {
+
+}

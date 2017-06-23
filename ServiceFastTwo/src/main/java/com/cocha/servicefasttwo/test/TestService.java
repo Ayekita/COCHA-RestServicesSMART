@@ -3,6 +3,7 @@ package com.cocha.servicefasttwo.test;
 import java.sql.Connection;
 
 import com.cocha.servicefasttwo.business.ServiceFast2;
+import com.cocha.servicefasttwo.domain.Response;
 
 public class TestService {
 	public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class TestService {
 
 			//Proceso
 			ServiceFast2 ejecutar = new ServiceFast2();
-			String respuesta = ejecutar.procesoPrincipal(negocio, moneda, valor, spnr, conSmart);
+			Response respuesta = ejecutar.procesoPrincipal(negocio, moneda, valor, spnr, conSmart);
 			System.out.println(respuesta);
 		} 
 		catch (Throwable e) {

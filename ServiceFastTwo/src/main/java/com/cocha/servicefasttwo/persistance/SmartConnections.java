@@ -3,7 +3,7 @@ package com.cocha.servicefasttwo.persistance;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import com.cocha.utils.PropertiesUtil;
+import com.cocha.servicefasttwo.utils.PropertiesUtil;
 import com.unisys.jdbc.dmsql.SQLException;
 
 public class SmartConnections {

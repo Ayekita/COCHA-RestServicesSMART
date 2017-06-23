@@ -1,0 +1,5 @@
+1498227652677	Delete elements
+1498233408266	Rename field 'status'
+1498233427224	Rename method 'getStatus'
+1498233441969	Rename method 'setStatus'
+1498233447892	Rename local variable 'status'

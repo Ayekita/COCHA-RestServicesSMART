@@ -13,18 +13,12 @@
 <fullyQualifiedTypeName name="com.cocha.persistance.JdbcConnection"/>
 <fullyQualifiedTypeName name="com.cocha.persistance.JdbcUpdate"/>
 <fullyQualifiedTypeName name="com.cocha.business.DoUpdateServices"/>
-<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
-<fullyQualifiedTypeName name="javax.ws.rs.core.Application"/>
 <fullyQualifiedTypeName name="javax.ws.rs.ApplicationPath"/>
-<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
-<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="com.cocha.utils.PropertiesUtil"/>
 <fullyQualifiedTypeName name="com.unisys.jdbc.dmsql.SQLException"/>
-<fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
-<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.xml.ws.Response"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response.StatusType"/>
@@ -35,9 +29,16 @@
 <fullyQualifiedTypeName name="com.cocha.business.consulta.GetLineaCredito"/>
 <fullyQualifiedTypeName name="com.cocha.dao.SqlSmartDao"/>
 <fullyQualifiedTypeName name="com.cocha.test.DoTest"/>
-<fullyQualifiedTypeName name="com.cocha.persistance.SmartConnections"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="com.cocha.business.ControlFacturacionFinanzas"/>
 <fullyQualifiedTypeName name="com.cocha.business.IngresoLineaCredito"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.Application"/>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="com.cocha.persistance.SmartConnections"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
 </qualifiedTypeNameHistroy>
